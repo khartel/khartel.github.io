@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="How VAE Rent handles rental records, Google account connections, outgoing Gmail messages and encrypted Google Drive backups."
+    />
+    <title>Privacy policy — VAE Rent</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="../">VAE Rent</a>
+      <nav aria-label="Main navigation">
+        <a href="../">About</a
+        ><a href="../privacy/" aria-current="page">Privacy</a
+        ><a href="../terms/">Terms</a>
+      </nav>
+    </header>
+    <main id="main" class="document">
+      <p class="eyebrow">Data and permissions</p>
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated: 29 October 2026</p>
+      <p>
+        This policy explains how VAE Rent handles information for
+        rental-management workflows and its optional Google connections. The
+        property owner operating an installation manages its records, staff
+        access and operational retention. The application contact is
+        <a href="mailto:itzkhartel@gmail.com">itzkhartel@gmail.com</a>.
+      </p>
+      <h2>Information used for rental management</h2>
+      <p>
+        An operator and authorised staff may enter staff accounts, tenant names
+        and contact details, property and unit information, agreements, rent
+        schedules, opening balances, recorded payments and correction reasons.
+        VAE Rent stores receipt documents, communication content, delivery
+        attempts and activity history to support those workflows.
+      </p>
+      <p>
+        Payment records describe payments entered by staff. The current
+        application does not collect card details or process online rent
+        payments.
+      </p>
+      <h2 id="google-data">Google account information and Gmail</h2>
+      <p>
+        When an authorised administrator connects Gmail, Google provides an
+        account identifier and verified email address so VAE Rent can identify
+        the selected sender. The connection requests <code>openid</code>,
+        <code>email</code> and <code>gmail.send</code>.
+      </p>
+      <p>
+        VAE Rent uses the connected sender to transmit receipts, replacement or
+        void notices, rent reminders, property-related messages and
+        operator-requested test emails. Google receives the destination address,
+        message content and any receipt PDF included in a send. Copies may be
+        retained by Gmail and recipients according to their own settings.
+      </p>
+      <p>
+        The connection does not request permission to read or search the Gmail
+        inbox. Stored Google authorisation tokens allow the enabled sending
+        workflows to run without repeatedly asking the administrator to sign in.
+        Tokens for the application sender are encrypted in its database; the
+        operator protects the separate encryption key.
+      </p>
+      <h2>Google Drive recovery backups</h2>
+      <p>
+        An operator may separately connect Google Drive for recovery backups
+        using <code>drive.file</code>. This permits the backup connection to
+        manage files and folders it creates, rather than giving it general
+        access to every file in the account.
+      </p>
+      <p>
+        The backup process creates encrypted recovery snapshots containing
+        rental records, receipt documents and delivery/activity history,
+        together with private application configuration and the matching
+        application source. Private configuration can contain database
+        credentials, Google client credentials and the key needed to recover the
+        application’s stored sender authorisation. These contents are encrypted
+        before transfer to the operator-selected Drive account. The recovery
+        password is kept separately from that Drive repository.
+      </p>
+      <p>
+        Authorisation credentials for the Drive backup tool are stored in
+        owner-only configuration on the operator’s computer. Backup verification
+        may download and decrypt a snapshot privately to check that recovery
+        works. The operator’s configured retention governs when older snapshots
+        are removed.
+      </p>
+      <h2>Purpose and limits on Google data use</h2>
+      <p>
+        Google account information and authorisation are used to provide the
+        connected communication and recovery features described here. VAE Rent
+        does not sell Google user data, use it for advertising, or use it to
+        train general-purpose AI or machine-learning models.
+      </p>
+      <p>
+        VAE Rent’s use and transfer of information received from Google APIs
+        follows the
+        <a
+          href="https://developers.google.com/terms/api-services-user-data-policy"
+          >Google API Services User Data Policy</a
+        >, including its Limited Use requirements. People may access operational
+        data only where needed for the authorised rental workflow, user-approved
+        support, security or applicable legal obligations.
+      </p>
+      <h2>Access, sharing and security</h2>
+      <p>
+        Property owners control authorised staff access. Managers can access
+        records within their assigned properties; Super Admins have broader
+        administrative access. The operator may export permitted records and
+        issue documents or messages to the intended recipients. Operational
+        information is also processed by the operator’s selected hosting and
+        Google services where those features are used.
+      </p>
+      <p>
+        VAE Rent uses individual staff accounts, access checks and activity
+        records. Operators are responsible for protecting their server, account
+        credentials, backup recovery password and configured network access. The
+        public information website has no login form, advertising, analytics
+        script or application-data connection. Its hosting provider may process
+        ordinary website request information under its own policies.
+      </p>
+      <h2>Retention, correction and deletion requests</h2>
+      <p>
+        Rental, financial and audit records may need to be retained by the
+        property operator. Archiving a tenant or agreement preserves its history
+        and is not deletion. Backup copies may remain until their retention
+        cycle removes them. Contact the property operator for access, correction
+        or deletion requests relating to a tenancy; the operator will assess the
+        request and any applicable record-retention obligations.
+      </p>
+      <p>
+        For Google connection questions or requests concerning
+        application-controlled Google account information, contact
+        <a href="mailto:itzkhartel@gmail.com">itzkhartel@gmail.com</a>. Removing
+        an authorisation does not retract emails already sent or automatically
+        erase retained tenancy or backup records.
+      </p>
+      <h2>Disconnecting Google access</h2>
+      <p>
+        An authorised Super Admin can disconnect the Gmail sender through VAE
+        Rent’s Email settings. The operator can stop Drive backup jobs and
+        remove the backup authorisation. A Google account holder can also revoke
+        an app through
+        <a href="https://myaccount.google.com/connections"
+          >Google Account connections</a
+        >. Revocation prevents further authorised access; it does not
+        automatically delete existing Drive backups or received emails.
+      </p>
+      <h2>Changes and contact</h2>
+      <p>
+        Updates to these data practices will be reflected here. Material changes
+        to Google data use require updated disclosures and any necessary
+        consent. Questions can be sent to
+        <a href="mailto:itzkhartel@gmail.com">itzkhartel@gmail.com</a>.
+      </p>
+    </main>
+    <footer>
+      <span>VAE Rent · App information</span>
+      <nav aria-label="Footer">
+        <a href="../">About</a><a href="../terms/">Terms of use</a>
+      </nav>
+    </footer>
+  </body>
+</html>
